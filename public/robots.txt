@@ -1,0 +1,10 @@
+robots: {
+  index: true, // tells bot can include this page in search results
+  follow: true, // bots should follow the links on this page and crawl them too
+  nocache: true, // tels bots not to store a cached version of the page
+  googleBot: {
+    index: true,
+    follow: true,
+    noimageindex: false, // tells bot not to index any images on the page
+  },
+}

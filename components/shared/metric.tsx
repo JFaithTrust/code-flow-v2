@@ -1,0 +1,52 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
+interface MetricProps {
+  imgUrl: string;
+  alt: string;
+  value: string | number;
+  title: string;
+  href?: string;
+  textStyles: string;
+  imgStyles?: string;
+  isAuthor?: boolean;
+}
+
+const Metric = ({
+  imgUrl,
+  alt,
+  value,
+  title,
+  href,
+  textStyles,
+  imgStyles,
+  isAuthor,
+}: MetricProps) => {
+  const metricContent = (
+    <>
+      <Image
+        src={imgUrl}
+        alt={alt}
+        className={`${imgStyles} rounded-full object-contain`}
+        width={16}
+        height={16}
+      />
+      <p className={`flex items-center gap-1 ${textStyles}`}>
+        {value}
+        <span className={`line-clamp-1 small-regular ${isAuthor ? 'max-sm:hidden' : ''}`}>
+          {title}
+        </span>
+      </p>
+    </>
+  );
+
+  return href ? (
+    <Link href={href} className="flex-center gap-1">
+      {metricContent}
+    </Link>
+  ) : (
+    <div className="flex-center gap-1">{metricContent}</div>
+  );
+};
+
+export default Metric;
