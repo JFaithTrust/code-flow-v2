@@ -1,10 +1,5 @@
 # CodeFlow
 
-[![Latest release](https://img.shields.io/github/v/release/JFaithTrust/code-flow-v2?label=release&style=social)](https://github.com/JFaithTrust/code-flow-v2/releases)
-[![Commits since release](https://img.shields.io/github/commits-since/JFaithTrust/code-flow-v2/latest.svg?style=social)](https://github.com/JFaithTrust/code-flow-v2/commits/main)
-[![Stars](https://img.shields.io/github/stars/JFaithTrust/code-flow-v2?style=social)](https://github.com/JFaithTrust/code-flow-v2/stargazers)
-[![Forks](https://img.shields.io/github/forks/JFaithTrust/code-flow-v2?style=social)](https://github.com/JFaithTrust/code-flow-v2/network/members)
-
 ![CodeFlow identity](public/images/site-logo.svg)
 
 CodeFlow is a modern, community-driven Q&A platform for developers. Collaborate on real-world questions, share knowledge-rich answers, and keep track of the technologies that matter to you.
