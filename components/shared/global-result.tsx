@@ -6,6 +6,7 @@ import { ReloadIcon } from '@radix-ui/react-icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
+import { toast } from 'sonner';
 
 import { globalSearch } from '@/lib/actions/general.action';
 
@@ -31,11 +32,9 @@ const GlobalResult = () => {
           type,
         });
 
-        console.log(res);
-
         setResult(res.data);
       } catch (error) {
-        console.log(error);
+        toast.error(`${(error as Error).message}`);
         setResult([]);
       } finally {
         setLoading(false);

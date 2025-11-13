@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 import {
   Select,
@@ -21,7 +21,6 @@ interface JobsFilterProps {
 
 const JobsFilter = ({ countriesList }: JobsFilterProps) => {
   const router = useRouter();
-  const pathname = usePathname();
   const searchParams = useSearchParams();
 
   const handleUpdateParams = (value: string) => {
@@ -37,7 +36,6 @@ const JobsFilter = ({ countriesList }: JobsFilterProps) => {
   return (
     <div className="relative mt-11 flex w-full justify-between gap-5 max-sm:flex-col sm:items-center">
       <LocalSearch
-        route={pathname}
         iconPosition="left"
         imgSrc="/icons/job-search.svg"
         placeholder="Job Title, Company, or Keywords"
