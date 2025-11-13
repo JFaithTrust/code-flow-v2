@@ -8,7 +8,7 @@ CodeFlow is a modern, community-driven Q&A platform for developers. Collaborate 
 
 ## 🌐 Demo
 
-- Live preview (coming soon)
+- Live preview https://code-flow-v2-rouge.vercel.app
 - Local development: http://localhost:3000
 
 ## 📝 Description
